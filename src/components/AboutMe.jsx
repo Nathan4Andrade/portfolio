@@ -36,9 +36,9 @@ export default function AboutMe() {
     "Javascript", //SiJavascript
     "React.js", //SiReact
     "Python", // SiPython
-    "Java", //FaJava
     "Node.js", //SiNodedotjs
-    "Next.js", // SiNextdotjs
+    "Next.js", //SiNextdotjs
+    "Java", // FaJavaSi
     "MongoDB", //SiMongodb
     "GraphQL", //SiGraphql
     "PostgreSQL", //SiPostgresql
@@ -88,9 +88,14 @@ const Container = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
+      transition: all 400ms ease;
       span {
         font-size: 10px;
       }
+    }
+    li:hover {
+      transition: all 400ms ease;
+      color: #777cf4;
     }
   }
 `;

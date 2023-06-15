@@ -52,6 +52,9 @@ const ContactPage = styled.div`
     font-size: 20px;
     li {
       margin-right: 20px;
+      a:hover {
+        color: #777cf4;
+      }
     }
   }
 `;
