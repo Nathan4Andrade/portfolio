@@ -5,13 +5,12 @@ import Contact from "./Contact";
 
 export default function Home() {
   return (
-    <HomePage id="home">
+    <HomePage id="#">
       <Info>
         <h3>Olá, me chamo</h3>
         <h1>Nathan Andrade</h1>
         <h2>Desenvolvedor Frontend</h2>
         <>
-         
           <Contact />
         </>
       </Info>
@@ -23,13 +22,11 @@ export default function Home() {
 }
 
 const Profile = styled.div`
-  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 const Info = styled.div`
-  width: 50%;
   /*  h1,
   h2,
   h3 {
@@ -46,9 +43,10 @@ const HomePage = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 0;
   img {
-    max-width: 300px;
-    max-height: 300px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
   }
 `;

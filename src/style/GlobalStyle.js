@@ -15,19 +15,12 @@ const GlobalStyle = createGlobalStyle`
 
     line-height: 1.7;
   }
-  header {
-	z-index: 1;
-	background-color: #2c2c2c;
 
-  }
-
-  header,
   main {
     margin: 0 auto;
     width: 75%;
   }
   main {
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,6 +39,7 @@ const GlobalStyle = createGlobalStyle`
 
   section {
     margin-top: 8rem;
+	height: 100vh;
   }
   section > h2,
   section > h5 {

@@ -8,7 +8,7 @@ export default function Projects() {
   ];
   return (
     <ProjectsSection id="projects">
-      <h2>/projetos</h2>
+      <h2>Projetos</h2>
       <ul>
         {projectsList.map((project) => (
           <li key={project.name}>{project.name}</li>

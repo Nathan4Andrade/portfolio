@@ -1,53 +1,10 @@
 /* eslint-disable react/jsx-key */
 import { styled } from "styled-components";
-import {
-  SiJavascript,
-  SiReact,
-  SiPython,
-  SiNodedotjs,
-  SiNextdotjs,
-  SiHtml5,
-  SiCss3,
-  SiMongodb,
-  SiGraphql,
-  SiPostgresql,
-  SiGithub,
-} from "react-icons/si";
-import { FaJava } from "react-icons/fa";
 
 export default function AboutMe() {
-  const skills = [
-    <SiHtml5 />,
-    <SiCss3 />,
-    <SiJavascript />,
-    <SiReact />,
-    <SiPython />,
-    <SiNodedotjs />,
-    <SiNextdotjs />,
-    <FaJava />,
-    <SiMongodb />,
-    <SiGraphql />,
-    <SiPostgresql />,
-    <SiGithub />,
-  ];
-  const skillName = [
-    "HTML", // SiHtml5
-    "CSS", //SiCss3
-    "Javascript", //SiJavascript
-    "React.js", //SiReact
-    "Python", // SiPython
-    "Node.js", //SiNodedotjs
-    "Next.js", //SiNextdotjs
-    "Java", // FaJavaSi
-    "MongoDB", //SiMongodb
-    "GraphQL", //SiGraphql
-    "PostgreSQL", //SiPostgresql
-    "GitHub",
-  ];
-
   return (
     <AboutMePage id="aboutme">
-      <h2>/sobre mim</h2>
+      <h2>Sobre mim</h2>
       <Container>
         <About>
           <h3>
@@ -56,26 +13,13 @@ export default function AboutMe() {
             Atualmente estou trabalhando como desenvolvedor web.
           </h3>
         </About>
-        <Skills>
-          <h3>Ultimamente venho trabalhando com estas tecnologias:</h3>
-          <ul>
-            {skills.map((skill, index) => (
-              <li key={index}>
-                {skill}
-                <span>{skillName[index]}</span>
-              </li>
-            ))}
-          </ul>
-        </Skills>
       </Container>
     </AboutMePage>
   );
 }
 const Container = styled.div`
   display: flex;
-  > div {
-    width: 50%;
-  }
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -99,7 +43,7 @@ const Container = styled.div`
     }
   }
 `;
-const Skills = styled.div``;
+
 const About = styled.div`
   display: flex;
   flex-direction: column;
