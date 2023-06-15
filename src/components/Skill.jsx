@@ -96,4 +96,8 @@ const SkillSection = styled.section`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-color: blue;
+  @media screen and (max-width: 1024px) {
+    background-color: red;
+  }
 `;

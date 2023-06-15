@@ -89,7 +89,8 @@ const GlobalStyle = createGlobalStyle`
       width: 90%;
     }
     section > h2 {
-      margin-top: 2rem;
+      margin-top: 3rem;
+	  margin-bottom: 0;
     }
   }
 `;

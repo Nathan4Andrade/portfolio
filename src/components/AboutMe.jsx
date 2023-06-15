@@ -57,6 +57,9 @@ const Cards = styled.ul`
   li:hover {
     background: transparent;
   }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 const Card = styled.li`
   background: rgba(0, 0, 0, 0.3);
@@ -85,6 +88,12 @@ const Card = styled.li`
 const About = styled.div`
   > p {
     margin: 2rem 0 2.6rem;
+    @media screen and (max-width: 1024px) {
+      margin: 1rem 0 1.5rem;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    text-align: center;
   }
 `;
 const Profile = styled.div`
@@ -102,12 +111,28 @@ const Profile = styled.div`
   img:hover {
     transform: rotate(0deg);
   }
+
+  @media screen and (max-width: 1024px) {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+  @media screen and (max-width: 600px) {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
 `;
 
 const Container = styled.div`
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+    h2 {
+      margin-top: 20px;
+    }
+  }
 `;
 
 const AboutMeSection = styled.section`
@@ -115,4 +140,7 @@ const AboutMeSection = styled.section`
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  @media screen and (max-width: 1024px) {
+    height: max-content;
+  }
 `;

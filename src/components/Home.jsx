@@ -43,13 +43,13 @@ const Info = styled.div`
   } */
   h1 {
     font-size: 50px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1024px) {
       font-size: 35px;
     }
   }
   h2 {
     font-size: 30px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 1024px) {
       font-size: 19px;
     }
   }
@@ -67,9 +67,9 @@ const HomeSection = styled.section`
 
   /* MEDIA QUERIES: small devices */
 
-  @media screen and (max-width: 600px) {
+  /* MEDIA QUERIES: medium devices */
+  @media screen and (max-width: 1024px) {
     flex-direction: column-reverse;
     justify-content: center;
   }
-  /* MEDIA QUERIES: medium devices */
 `;
