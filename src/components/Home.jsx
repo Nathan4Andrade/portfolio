@@ -1,5 +1,6 @@
 import { styled } from "styled-components";
 import profile from "../assets/profile.jpg";
+import Typewriter from "typewriter-effect";
 
 import Contact from "./Contact";
 
@@ -8,7 +9,15 @@ export default function Home() {
     <HomeSection id="#">
       <Info>
         <h3>Olá, me chamo</h3>
-        <h1>Nathan Andrade</h1>
+        <h1>
+          <Typewriter
+            options={{
+              strings: ["Nathan Andrade"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </h1>
         <h2>Desenvolvedor Frontend</h2>
         <>
           <Contact />

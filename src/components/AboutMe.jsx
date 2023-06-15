@@ -1,6 +1,9 @@
 /* eslint-disable react/jsx-key */
 import { styled } from "styled-components";
 import profile from "../assets/profile2.jpeg";
+import { FaUserGraduate } from "react-icons/fa";
+import { RiComputerFill } from "react-icons/ri";
+import { BsFillAwardFill } from "react-icons/bs";
 
 export default function AboutMe() {
   return (
@@ -13,20 +16,26 @@ export default function AboutMe() {
         <About>
           <Cards>
             <Card>
-              <p>Graduando em</p>
-              <h3>Ciência da Computação</h3>
-            </Card>
-            <Card>
-              <p>Técnico em</p>
-              <h3>Informática</h3>
-            </Card>
-            <Card>
-              <p>Projetos</p>
-              <h3>+20 completos</h3>
-            </Card>
-            <Card>
+              <h4>
+                <BsFillAwardFill />
+              </h4>
               <p>Experiência</p>
               <h3>+5 anos</h3>
+            </Card>
+            <Card>
+              <h4>
+                <FaUserGraduate />
+              </h4>
+
+              <p>Graduando em</p>
+              <h3>Computação</h3>
+            </Card>
+            <Card>
+              <h4>
+                <RiComputerFill />
+              </h4>
+              <p>Técnico em</p>
+              <h3>Informática</h3>
             </Card>
           </Cards>
 
@@ -42,70 +51,63 @@ export default function AboutMe() {
   );
 }
 const Cards = styled.ul`
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  li:hover {
+    background: transparent;
+  }
 `;
 const Card = styled.li`
-  width: 130px;
-  height: 130px;
-  border-radius: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: rgba(0, 0, 0, 0.3);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem 0;
+  text-align: center;
+  transition: all 400ms ease;
+  h4 {
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  h3 {
+  }
+
+  /*  
+  
   backdrop-filter: blur(15px);
   text-align: center;
-  padding: 5px;
-  > p {
-    font-size: 12px;
-  }
+ 
+  
+  } */
 `;
-
-const Profile = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 30px;
-  img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-  }
-`;
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  > ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    > li {
-      /* padding-right: 50px;
-      padding-top: 20px; */
-      font-weight: 600;
-      font-size: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: all 400ms ease;
-      > span {
-        font-size: 10px;
-      }
-    }
-    > li:hover {
-      transition: all 400ms ease;
-      color: #777cf4;
-    }
-  }
-`;
-
 const About = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  > p {
+    margin: 2rem 0 2.6rem;
+  }
+`;
+const Profile = styled.div`
+  display: grid;
+  place-items: center;
+  border-radius: 2rem;
+  aspect-ratio: 1/1;
+  background: linear-gradient(90deg, #777cf4 2.62%, #f47777 93.38%);
+  img {
+    border-radius: 2rem;
+    transform: rotate(-5deg);
+    transition: all 400ms ease;
+    overflow: hidden;
+  }
+  img:hover {
+    transform: rotate(0deg);
+  }
+`;
+
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
 `;
 
 const AboutMeSection = styled.section`
