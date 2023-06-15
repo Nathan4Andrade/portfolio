@@ -23,7 +23,7 @@ export default function AboutMe() {
         </h3>
       </About>
       <Skills>
-        <h2>Ultimamente venho trabalhando com estas tecnologias:</h2>
+        <h3>Ultimamente venho trabalhando com estas tecnologias:</h3>
         <ul>
           {skills.map((skill) => (
             <li key={skill}>{skill}</li>
@@ -45,10 +45,6 @@ const AboutMePage = styled.div`
   justify-content: space-between;
   > div {
     width: 50%;
-
-    h1 {
-      font-size: 40px;
-    }
     ul {
       display: flex;
       flex-wrap: wrap;
