@@ -1,3 +1,5 @@
+import { styled } from "styled-components";
+
 export default function Projects() {
   const projectsList = [
     { name: "Trackit", link: "#" },
@@ -5,13 +7,15 @@ export default function Projects() {
     { name: "ZapRecall", link: "#" },
   ];
   return (
-    <>
-      <h1>Dá uma olhada nos meus projetos:</h1>
+    <ProjectsSection id="projects">
+      <h2>/projetos</h2>
       <ul>
         {projectsList.map((project) => (
           <li key={project.name}>{project.name}</li>
         ))}
       </ul>
-    </>
+    </ProjectsSection>
   );
 }
+
+const ProjectsSection = styled.section``;

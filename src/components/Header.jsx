@@ -2,15 +2,25 @@ import { styled } from "styled-components";
 
 export default function Header() {
   return (
-    <Navbar>
-      <h1>Portfolio</h1>
-      <ul>
-        <li>Início</li>
-        <li>Sobre mim</li>
-        <li>Contato</li>
-        <li>Projetos</li>
-      </ul>
-    </Navbar>
+    <header>
+      <Navbar>
+        <h1>Portfolio</h1>
+        <ul>
+          <li>
+            <a href="#home">Inicio</a>
+          </li>
+          <li>
+            <a href="#aboutme">Sobre mim</a>
+          </li>
+          <li>
+            <a href="#contact">Contato</a>
+          </li>
+          <li>
+            <a href="#projects">Projetos</a>
+          </li>
+        </ul>
+      </Navbar>
+    </header>
   );
 }
 
@@ -18,7 +28,7 @@ const Navbar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
+
   height: 70px;
 
   ul {

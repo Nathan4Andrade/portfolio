@@ -9,22 +9,13 @@ function App() {
   return (
     <>
       <Header />
-      <Main>
+      <main>
         <Home />
         <AboutMe />
-        <Contact />
         <Projects />
-      </Main>
+      </main>
     </>
   );
 }
 
 export default App;
-
-const Main = styled.main`
-  margin: 0 auto;
-  padding: 0 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
