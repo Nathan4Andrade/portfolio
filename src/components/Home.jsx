@@ -43,9 +43,15 @@ const Info = styled.div`
   } */
   h1 {
     font-size: 50px;
+    @media screen and (max-width: 600px) {
+      font-size: 35px;
+    }
   }
   h2 {
     font-size: 30px;
+    @media screen and (max-width: 600px) {
+      font-size: 19px;
+    }
   }
 `;
 const HomeSection = styled.section`
@@ -58,4 +64,12 @@ const HomeSection = styled.section`
     height: 300px;
     border-radius: 50%;
   }
+
+  /* MEDIA QUERIES: small devices */
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  /* MEDIA QUERIES: medium devices */
 `;
