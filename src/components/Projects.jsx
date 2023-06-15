@@ -18,4 +18,9 @@ export default function Projects() {
   );
 }
 
-const ProjectsSection = styled.section``;
+const ProjectsSection = styled.section`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+`;

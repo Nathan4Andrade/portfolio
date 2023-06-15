@@ -91,4 +91,9 @@ const Container = styled.div`
 `;
 const Skills = styled.div``;
 
-const SkillSection = styled.section``;
+const SkillSection = styled.section`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+`;

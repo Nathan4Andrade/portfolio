@@ -4,37 +4,29 @@ import { MdLightbulb } from "react-icons/md";
 import { IoMdHelpCircle, IoMdCode } from "react-icons/io";
 import { useState } from "react";
 
-export default function Header() {
+export default function FloatingNavbar() {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <Navbar>
       <ul>
-        <li
-          onClick={() => setActiveNav("#")}
-          className={activeNav === "#" ? "active" : ""}>
-          <a href="#">
+        <li className={activeNav === "#" ? "active" : ""}>
+          <a onClick={() => setActiveNav("#")} href="#">
             <AiFillHome />
           </a>
         </li>
-        <li
-          onClick={() => setActiveNav("#aboutme")}
-          className={activeNav === "#aboutme" ? "active" : ""}>
-          <a href="#aboutme">
+        <li className={activeNav === "#aboutme" ? "active" : ""}>
+          <a onClick={() => setActiveNav("#aboutme")} href="#aboutme">
             <IoMdHelpCircle />
           </a>
         </li>
-        <li
-          onClick={() => setActiveNav("#skills")}
-          className={activeNav === "#skills" ? "active" : ""}>
-          <a href="#skills">
+        <li className={activeNav === "#skills" ? "active" : ""}>
+          <a onClick={() => setActiveNav("#skills")} href="#skills">
             <MdLightbulb />
           </a>
         </li>
 
-        <li
-          onClick={() => setActiveNav("#projects")}
-          className={activeNav === "#projects" ? "active" : ""}>
-          <a href="#projects">
+        <li className={activeNav === "#projects" ? "active" : ""}>
+          <a onClick={() => setActiveNav("#projects")} href="#projects">
             <IoMdCode />
           </a>
         </li>
@@ -66,12 +58,15 @@ const Navbar = styled.div`
       border-radius: 50%;
       font-size: 1.1rem;
       line-height: 0;
+      transition: all 400ms ease;
     }
     li:hover {
       background: rgba(0, 0, 0, 0.3);
+      transition: all 400ms ease;
     }
     li.active {
       background: linear-gradient(90deg, #777cf4 2.62%, #f47777 93.38%);
+      transition: all 400ms ease;
     }
   }
 `;

@@ -1,15 +1,13 @@
-import { styled } from "styled-components";
-import Header from "./components/Header";
+import FloatingNavbar from "./components/FloatingNavbar";
 import Home from "./components/Home";
 import AboutMe from "./components/AboutMe";
-import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Skill from "./components/Skill";
 
 function App() {
   return (
     <>
-      <Header />
+      <FloatingNavbar />
       <main>
         <Home />
         <AboutMe />

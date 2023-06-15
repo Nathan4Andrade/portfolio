@@ -5,7 +5,7 @@ import Contact from "./Contact";
 
 export default function Home() {
   return (
-    <HomePage id="#">
+    <HomeSection id="#">
       <Info>
         <h3>Olá, me chamo</h3>
         <h1>Nathan Andrade</h1>
@@ -17,7 +17,7 @@ export default function Home() {
       <Profile>
         <img src={profile} alt="profile picture" />
       </Profile>
-    </HomePage>
+    </HomeSection>
   );
 }
 
@@ -39,7 +39,7 @@ const Info = styled.div`
     font-size: 30px;
   }
 `;
-const HomePage = styled.section`
+const HomeSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;

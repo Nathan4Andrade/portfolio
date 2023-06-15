@@ -5,7 +5,7 @@ import cv from "../assets/cv-nathan_andrade.pdf";
 
 export default function Contact() {
   return (
-    <ContactPage id="contact">
+    <ContactDiv id="contact">
       <button>
         <a href={cv} download>
           Baixe meu currículo
@@ -38,11 +38,11 @@ export default function Contact() {
           </a>
         </li>
       </ul>
-    </ContactPage>
+    </ContactDiv>
   );
 }
 
-const ContactPage = styled.div`
+const ContactDiv = styled.div`
   margin-top: 10px;
   display: flex;
   align-items: flex-end;

@@ -1,4 +1,4 @@
-import { createGlobalStyle, styled } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -35,11 +35,13 @@ const GlobalStyle = createGlobalStyle`
   }
   h2 {
     font-style: italic;
+	margin-bottom: 20px;
+	font-size: 35px;
   }
 
   section {
     margin-top: 8rem;
-	height: 100vh;
+    height: 100vh;
   }
   section > h2,
   section > h5 {
@@ -47,19 +49,20 @@ const GlobalStyle = createGlobalStyle`
   }
 
   button {
-	background: linear-gradient(90deg, #777CF4 2.62%, #F47777 93.38%);
-	border-radius: 24px;
-	border: none;
-	padding: 10px 20px;
-	cursor: pointer;
-	font-family: inherit;
+    background: linear-gradient(90deg, #777cf4 2.62%, #f47777 93.38%);
+    border-radius: 24px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: inherit;
+	width: max-content;
+	color: #ffffff;
   }
   a {
-	text-decoration: none;
-	color: #ffffff;
+    text-decoration: none;
+    color: #ffffff;
     transition: all 400ms ease;
   }
-
 
   img {
     display: block;
@@ -70,7 +73,8 @@ const GlobalStyle = createGlobalStyle`
   /* MEDIA QUERIES: medium devices */
 
   @media screen and (max-width: 1024px) {
-    header, main {
+    header,
+    main {
       width: 86%;
     }
     section {
@@ -80,7 +84,8 @@ const GlobalStyle = createGlobalStyle`
   /* MEDIA QUERIES: medium devices */
 
   @media screen and (max-width: 600px) {
-    header, main {
+    header,
+    main {
       width: 90%;
     }
     section > h2 {
