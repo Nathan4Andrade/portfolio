@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   html {
-    scroll-behavior: smooth;
+/*     scroll-behavior: smooth; */
   }
   ::-webkit-scrollbar {
     display: none;
@@ -47,7 +47,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   section {
-    margin-top: 8rem;
+    margin-top: 4rem;
 
   }
   section > h2,

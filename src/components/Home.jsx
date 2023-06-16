@@ -58,8 +58,9 @@ const HomeSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5rem;
+  /* padding-top: 5rem; */
   max-width: 960px;
+  height: 100vh;
   img {
     width: 300px;
     height: 300px;
@@ -71,5 +72,6 @@ const HomeSection = styled.section`
     flex-direction: column-reverse;
     justify-content: center;
     padding-top: 0;
+    height: fit-content;
   }
 `;

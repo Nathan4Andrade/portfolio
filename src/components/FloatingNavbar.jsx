@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { Link } from "react-scroll";
 import { AiFillHome } from "react-icons/ai";
 import { MdOutlineRateReview, MdContacts } from "react-icons/md";
 import { IoMdHelpCircle, IoMdCode } from "react-icons/io";
@@ -6,34 +7,66 @@ import { useState } from "react";
 
 export default function FloatingNavbar() {
   const [activeNav, setActiveNav] = useState("#");
+
   return (
     <Navbar>
       <ul>
         <li className={activeNav === "#" ? "active" : ""}>
-          <a onClick={() => setActiveNav("#")} href="#">
+          <Link
+            to="#"
+            spy={true}
+            smooth={true}
+            offset={-140}
+            duration={500}
+            onClick={() => setActiveNav("#")}>
             <AiFillHome />
-          </a>
+          </Link>
+          {/*  <a onClick={() => setActiveNav("#")} href="#"></a> */}
         </li>
         <li className={activeNav === "#aboutme" ? "active" : ""}>
-          <a onClick={() => setActiveNav("#aboutme")} href="#aboutme">
+          <Link
+            to="aboutme"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            onClick={() => setActiveNav("#aboutme")}>
             <IoMdHelpCircle />
-          </a>
+          </Link>
         </li>
 
         <li className={activeNav === "#projects" ? "active" : ""}>
-          <a onClick={() => setActiveNav("#projects")} href="#projects">
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            onClick={() => setActiveNav("#projects")}>
             <IoMdCode />
-          </a>
+          </Link>
         </li>
         <li className={activeNav === "#reviews" ? "active" : ""}>
-          <a onClick={() => setActiveNav("#reviews")} href="#reviews">
+          <Link
+            to="reviews"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            onClick={() => setActiveNav("#reviews")}>
             <MdOutlineRateReview />
-          </a>
+          </Link>
         </li>
         <li className={activeNav === "#contacts" ? "active" : ""}>
-          <a onClick={() => setActiveNav("#contacts")} href="#contacts">
+          <Link
+            to="contacts"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            onClick={() => setActiveNav("#contacts")}>
             <MdContacts />
-          </a>
+          </Link>
         </li>
       </ul>
     </Navbar>
@@ -52,26 +85,38 @@ const Navbar = styled.div`
   width: max-content;
   border-radius: 3rem;
   backdrop-filter: blur(15px);
-
   ul {
     display: flex;
-    gap: 20px;
-
+    gap: 18px;
     li {
-      background: transparent;
-      padding: 0.9rem;
-      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 1.1rem;
-      line-height: 0;
-      transition: all 400ms ease;
-    }
-    li:hover {
-      background: rgba(0, 0, 0, 0.3);
-      transition: all 400ms ease;
-    }
-    li.active {
-      background: linear-gradient(90deg, #777cf4 2.62%, #f47777 93.38%);
-      transition: all 400ms ease;
+
+      > :hover {
+        transition: all 400ms ease;
+        background: rgba(0, 0, 0, 0.3);
+      }
+
+      a {
+        padding: 1rem;
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+        background: transparent;
+
+        svg {
+          position: relative;
+          bottom: -30%;
+          transform: translateY(-50%);
+        }
+      }
+
+      .active {
+        transition: all 400ms ease;
+        background: linear-gradient(90deg, #777cf4 2.62%, #f47777 93.38%);
+      }
     }
   }
 `;

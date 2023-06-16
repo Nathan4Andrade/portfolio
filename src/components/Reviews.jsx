@@ -76,7 +76,7 @@ const Container = styled.div`
     background: #5258f3;
   }
   .swiper {
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
   }
   @media screen and (max-width: 1024px) {
     width: 80%;

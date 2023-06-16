@@ -116,6 +116,7 @@ const Container = styled.div`
   }
   @media screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
+    gap: 5%;
   }
   @media screen and (max-width: 600px) {
     width: 90%;
