@@ -43,9 +43,9 @@ export default function Projects() {
       <h5>O que tenho feito ultimamente?</h5>
       <h2>Projetos</h2>
       <Container>
-        {projectsList.map((project) => (
+        {projectsList.map((project, index) => (
           <PortfolioProject
-            key={project.name}
+            key={index}
             name={project.name}
             link={project.link}
             github={project.github}

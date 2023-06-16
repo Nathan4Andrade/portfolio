@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { AiFillHome } from "react-icons/ai";
-import { MdLightbulb } from "react-icons/md";
+import { MdLightbulb, MdOutlineRateReview } from "react-icons/md";
 import { IoMdHelpCircle, IoMdCode } from "react-icons/io";
 import { useState } from "react";
 
@@ -28,6 +28,11 @@ export default function FloatingNavbar() {
         <li className={activeNav === "#projects" ? "active" : ""}>
           <a onClick={() => setActiveNav("#projects")} href="#projects">
             <IoMdCode />
+          </a>
+        </li>
+        <li className={activeNav === "#reviews" ? "active" : ""}>
+          <a onClick={() => setActiveNav("#reviews")} href="#reviews">
+            <MdOutlineRateReview />
           </a>
         </li>
       </ul>
