@@ -19,7 +19,9 @@ export default function AboutMe() {
             <img src={profile} alt="profile picture" />
           </div>
 
-          <button>Vamos conversar!</button>
+          <button>
+            <a href="#contacts">Vamos conversar?</a>
+          </button>
         </Profile>
         <About>
           <Cards>

@@ -48,7 +48,7 @@ export default function ContactOptions() {
             <h6>+123456789</h6>
             <button>
               <a
-                href="https://api.whatsapp.com/send?phone=55983987241377"
+                href="https://api.whatsapp.com/send?phone=5583987241377"
                 target="_blank"
                 rel="noreferrer">
                 Mande uma mensagem
