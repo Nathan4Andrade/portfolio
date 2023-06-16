@@ -34,14 +34,19 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 500;
   }
   h2 {
-    font-style: italic;
+    
 	margin-bottom: 20px;
 	font-size: 35px;
+  }
+  h5{
+    margin-top: 2rem;
+    font-size: 10px;
+    color: #777cf4;
   }
 
   section {
     margin-top: 8rem;
-    height: 100vh;
+
   }
   section > h2,
   section > h5 {
@@ -88,7 +93,7 @@ const GlobalStyle = createGlobalStyle`
     main {
       width: 90%;
     }
-    section > h2 {
+    section > h5 {
       margin-top: 3rem;
 	  margin-bottom: 0;
     }

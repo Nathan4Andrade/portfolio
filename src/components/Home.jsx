@@ -47,18 +47,23 @@ const Info = styled.div`
       font-size: 35px;
     }
   }
+
   h2 {
+    font-style: italic;
     font-size: 30px;
     @media screen and (max-width: 1024px) {
       font-size: 19px;
     }
+  }
+  h3 {
+    color: #777cf4;
   }
 `;
 const HomeSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 0;
+  /*   margin-top: 0; */
   img {
     width: 300px;
     height: 300px;
