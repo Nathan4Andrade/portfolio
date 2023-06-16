@@ -77,10 +77,6 @@ const Container = styled.div`
   }
   .swiper {
     padding-bottom: 2rem;
-    overflow: visible;
-  }
-  .swiper-pagination {
-    margin-bottom: -2rem;
   }
   @media screen and (max-width: 1024px) {
     width: 80%;
