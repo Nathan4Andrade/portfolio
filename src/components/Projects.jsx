@@ -21,7 +21,7 @@ export default function Projects() {
     },
     {
       name: "Cineflex",
-      link: "projeto10-cineflex-blue-three.vercel.app",
+      link: "https://projeto10-cineflex-blue-three.vercel.app",
       github: "https://github.com/Nathan4Andrade/projeto10-cineflex",
       image: cineflex,
     },
