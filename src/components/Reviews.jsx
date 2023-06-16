@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import ReviewItem from "./ReviewItem";
-import reactimage from "../assets/react.png";
 
 import reviewer1 from "../assets/reviews/reviewer1.jpg";
 import reviewer2 from "../assets/reviews/reviewer2.jpg";
@@ -78,7 +77,7 @@ const Container = styled.div`
   }
   .swiper {
     padding-bottom: 2rem;
-    overflow: none;
+    overflow: visible;
   }
   .swiper-pagination {
     margin-bottom: -2rem;
