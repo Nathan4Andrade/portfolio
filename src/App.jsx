@@ -6,7 +6,6 @@ import Skill from "./components/Skill";
 import Reviews from "./components/Reviews";
 import ContactOptions from "./components/ContactOptions";
 import Footer from "./components/Footer";
-import Navbar2 from "./components/Navbar2";
 
 function App() {
   return (

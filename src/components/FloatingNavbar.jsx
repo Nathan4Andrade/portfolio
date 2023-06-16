@@ -3,6 +3,8 @@ import { Link } from "react-scroll";
 import { AiFillHome } from "react-icons/ai";
 import { MdOutlineRateReview, MdContacts } from "react-icons/md";
 import { IoMdHelpCircle, IoMdCode } from "react-icons/io";
+import { FaHome, FaUser, FaCode, FaComment } from "react-icons/fa";
+import { RiContactsBook2Fill } from "react-icons/ri";
 import { useState } from "react";
 
 export default function FloatingNavbar() {
@@ -19,7 +21,7 @@ export default function FloatingNavbar() {
             offset={-140}
             duration={500}
             onClick={() => setActiveNav("#")}>
-            <AiFillHome />
+            <FaHome />
           </Link>
           {/*  <a onClick={() => setActiveNav("#")} href="#"></a> */}
         </li>
@@ -31,7 +33,7 @@ export default function FloatingNavbar() {
             offset={0}
             duration={500}
             onClick={() => setActiveNav("#aboutme")}>
-            <IoMdHelpCircle />
+            <FaUser />
           </Link>
         </li>
 
@@ -43,7 +45,7 @@ export default function FloatingNavbar() {
             offset={0}
             duration={500}
             onClick={() => setActiveNav("#projects")}>
-            <IoMdCode />
+            <FaCode />
           </Link>
         </li>
         <li className={activeNav === "#reviews" ? "active" : ""}>
@@ -54,7 +56,7 @@ export default function FloatingNavbar() {
             offset={0}
             duration={500}
             onClick={() => setActiveNav("#reviews")}>
-            <MdOutlineRateReview />
+            <FaComment />
           </Link>
         </li>
         <li className={activeNav === "#contacts" ? "active" : ""}>
@@ -65,7 +67,7 @@ export default function FloatingNavbar() {
             offset={0}
             duration={500}
             onClick={() => setActiveNav("#contacts")}>
-            <MdContacts />
+            <RiContactsBook2Fill />
           </Link>
         </li>
       </ul>
