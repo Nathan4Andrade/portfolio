@@ -1,8 +1,6 @@
 import { styled } from "styled-components";
 import { Link } from "react-scroll";
-import { AiFillHome } from "react-icons/ai";
-import { MdOutlineRateReview, MdContacts } from "react-icons/md";
-import { IoMdHelpCircle, IoMdCode } from "react-icons/io";
+
 import { FaHome, FaUser, FaCode, FaComment } from "react-icons/fa";
 import { RiContactsBook2Fill } from "react-icons/ri";
 import { useState } from "react";
