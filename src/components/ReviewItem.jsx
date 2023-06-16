@@ -22,4 +22,8 @@ const Review = styled.div`
     border-radius: 50%;
     margin: 0 auto 1rem;
   }
+  p {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
 `;
