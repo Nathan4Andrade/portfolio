@@ -9,7 +9,10 @@ export default function PortfolioProject({ name, link, github, image }) {
       <h4>{name}</h4>
       <Description>
         <button>
-          <a href={link} target="_blank" rel="noreferrer">
+          <a
+            href={link}
+            target={name !== "Em breve" ? "_blank" : ""}
+            rel="noreferrer">
             Live Demo
           </a>
         </button>
