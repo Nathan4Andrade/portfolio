@@ -5,7 +5,7 @@ import cv from "../assets/cv-nathan_andrade.pdf";
 
 export default function Contact() {
   return (
-    <ContactDiv id="contact">
+    <ContactDiv>
       <button>
         <a href={cv} download>
           Baixe meu currículo

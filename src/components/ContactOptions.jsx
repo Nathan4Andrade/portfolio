@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import emailjs from "emailjs-com";
 
 export default function ContactOptions() {
@@ -26,7 +26,7 @@ export default function ContactOptions() {
     e.target.reset();
   };
   return (
-    <ContactOptionSection>
+    <ContactOptionSection id="contacts">
       <h5>Vamos conversar?</h5>
       <h2>Contatos</h2>
       <Container>
