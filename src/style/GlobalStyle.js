@@ -24,6 +24,8 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 6rem;
+
   }
   h1,
   h2,

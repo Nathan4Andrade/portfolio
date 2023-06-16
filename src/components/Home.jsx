@@ -36,11 +36,6 @@ const Profile = styled.div`
   justify-content: center;
 `;
 const Info = styled.div`
-  /*  h1,
-  h2,
-  h3 {
-    padding-bottom: 9px;
-  } */
   h1 {
     font-size: 50px;
     @media screen and (max-width: 1024px) {
@@ -63,18 +58,18 @@ const HomeSection = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*   margin-top: 0; */
+  padding-top: 5rem;
+  max-width: 960px;
   img {
     width: 300px;
     height: 300px;
     border-radius: 50%;
   }
 
-  /* MEDIA QUERIES: small devices */
-
   /* MEDIA QUERIES: medium devices */
   @media screen and (max-width: 1024px) {
     flex-direction: column-reverse;
     justify-content: center;
+    padding-top: 0;
   }
 `;
