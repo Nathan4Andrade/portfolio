@@ -109,6 +109,10 @@ const Container = styled.div`
       resize: none;
       color: #ffffff;
     }
+    input:focus,
+    textarea:focus {
+      outline: none;
+    }
   }
   @media screen and (max-width: 1024px) {
     grid-template-columns: 1fr;
