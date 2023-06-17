@@ -5,7 +5,7 @@ import reactimage from "../assets/react.png";
 export default function PortfolioProject({ name, link, github, image }) {
   return (
     <ProjectItem>
-      <img src={reactimage} alt={image} />
+      <img src={image} alt={image} />
       <h4>{name}</h4>
       <Description>
         <button>

@@ -1,9 +1,9 @@
 import { styled } from "styled-components";
 import PortfolioProject from "./PortfolioProject";
 import reactimage from "../assets/react.png";
-import trackit from "../assets/trackit2.png";
-import zaprecall from "../assets/zaprecall.png";
-import cineflex from "../assets/cineflex.png";
+import trackit from "../assets/trackit-print.jpeg";
+import zaprecall from "../assets/zaprecall-print.jpeg";
+import cineflex from "../assets/cineflex-print.jpeg";
 
 export default function Projects() {
   const projectsList = [
