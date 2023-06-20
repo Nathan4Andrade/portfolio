@@ -1,4 +1,6 @@
 import { styled } from "styled-components";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { GrMail } from "react-icons/gr";
 
 export default function Footer() {
   return (
@@ -24,6 +26,26 @@ export default function Footer() {
           <a href="#contacts">Contatos</a>
         </li>
       </ul>
+      <Contacts>
+        <a
+          href="https://www.linkedin.com/in/nathanandradehenriques/"
+          target="_blank"
+          rel="noreferrer">
+          <BsLinkedin />
+        </a>
+        <a
+          href="mailto:nathanandrade20@gmail.com"
+          target="_blank"
+          rel="noreferrer">
+          <GrMail />
+        </a>
+        <a
+          href="https://github.com/Nathan4Andrade"
+          target="_blank"
+          rel="noreferrer">
+          <BsGithub />
+        </a>
+      </Contacts>
       <Copyright>
         <small>&copy; Nathan Andrade. All rights reserved.</small>
       </Copyright>
@@ -46,7 +68,7 @@ const FooterSection = styled.footer`
     font-weight: 800;
     margin-bottom: 2rem;
   }
-  ul {
+  > ul {
     display: flex;
     flex: wrap;
     justify-content: center;
@@ -57,4 +79,7 @@ const FooterSection = styled.footer`
       gap: 1rem;
     }
   }
+`;
+const Contacts = styled.div`
+  display: flex;
 `;
