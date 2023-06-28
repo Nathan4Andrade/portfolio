@@ -14,17 +14,18 @@ export default function Projects() {
       image: trackit,
     },
     {
+      name: "Cineflex",
+      link: "https://cineflex-nathan4andrade.vercel.app/",
+      github: "https://github.com/Nathan4Andrade/cineflex",
+      image: cineflex,
+    },
+    {
       name: "ZapRecall",
       link: "https://projeto9-zaprecall-murex-two.vercel.app/",
       github: "https://github.com/Nathan4Andrade/projeto9-zaprecall",
       image: zaprecall,
     },
-    {
-      name: "Cineflex",
-      link: "https://projeto10-cineflex-blue-three.vercel.app",
-      github: "https://github.com/Nathan4Andrade/projeto10-cineflex",
-      image: cineflex,
-    },
+    
     {
       name: "Em breve",
       link: "#",
