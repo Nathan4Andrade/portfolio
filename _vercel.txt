@@ -1,0 +1,1 @@
+vc-domain-verify=nathan4andrade.vercel.com,41eb2a0cac7daf041090
