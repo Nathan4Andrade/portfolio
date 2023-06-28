@@ -10,7 +10,7 @@ export default function Projects() {
     {
       name: "Trackit",
       link: "https://trackit-nathan4andrade.vercel.app/",
-      github: "https://github.com/Nathan4Andrade/projeto11-trackit",
+      github: "https://github.com/Nathan4Andrade/trackit",
       image: trackit,
     },
     {
