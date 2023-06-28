@@ -9,7 +9,7 @@ export default function Projects() {
   const projectsList = [
     {
       name: "Trackit",
-      link: "https://projeto11-trackit-lyart-zeta.vercel.app/",
+      link: "https://trackit-nathan4andrade.vercel.app/",
       github: "https://github.com/Nathan4Andrade/projeto11-trackit",
       image: trackit,
     },
