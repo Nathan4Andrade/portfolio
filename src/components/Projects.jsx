@@ -38,18 +38,6 @@ export default function Projects() {
       github: "https://github.com/Nathan4Andrade/projeto9-zaprecall",
       image: zaprecall,
     },
-    {
-      name: "Em breve",
-      link: "#",
-      github: "https://github.com/Nathan4Andrade",
-      image: reactimage,
-    },
-    {
-      name: "Em breve",
-      link: "#",
-      github: "https://github.com/Nathan4Andrade",
-      image: reactimage,
-    },
   ];
   return (
     <ProjectsSection id="projects">
