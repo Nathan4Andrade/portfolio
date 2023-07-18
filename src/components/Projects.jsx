@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import PortfolioProject from "./PortfolioProject";
-import reactimage from "../assets/react.png";
+/* import reactimage from "../assets/react.png"; */
 import trackit from "../assets/trackit-print.jpeg";
 import zaprecall from "../assets/zaprecall-print.jpeg";
 import cineflex from "../assets/cineflex-print.jpeg";
