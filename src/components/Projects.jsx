@@ -4,9 +4,22 @@ import reactimage from "../assets/react.png";
 import trackit from "../assets/trackit-print.jpeg";
 import zaprecall from "../assets/zaprecall-print.jpeg";
 import cineflex from "../assets/cineflex-print.jpeg";
+import mywallet from "../assets/mywallet-logo.png";
 
 export default function Projects() {
   const projectsList = [
+    {
+      name: "MyWallet (Front-end)",
+      link: "https://mywallet-nathan4andrade.vercel.app/",
+      github: "https://github.com/Nathan4Andrade/projeto14-mywallet-front",
+      image: mywallet,
+    },
+    {
+      name: "MyWallet (API)",
+      link: "https://github.com/Nathan4Andrade/projeto14-mywallet-back",
+      github: "https://github.com/Nathan4Andrade/projeto14-mywallet-back",
+      image: mywallet,
+    },
     {
       name: "Trackit",
       link: "https://trackit-nathan4andrade.vercel.app/",
@@ -25,7 +38,6 @@ export default function Projects() {
       github: "https://github.com/Nathan4Andrade/projeto9-zaprecall",
       image: zaprecall,
     },
-    
     {
       name: "Em breve",
       link: "#",
