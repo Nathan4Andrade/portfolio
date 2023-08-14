@@ -5,11 +5,25 @@ import trackit from "../assets/trackit-print.jpeg";
 import zaprecall from "../assets/zaprecall-print.jpeg";
 import cineflex from "../assets/cineflex-print.jpeg";
 import mywallet from "../assets/mywallet-logo.png";
+import catwalk from "../assets/catwalk.png";
+import shortly from "../assets/shortly.png";
 
 export default function Projects() {
   const projectsList = [
     {
-      name: "MyWallet (Front-end)",
+      name: "Catwalk",
+      link: "https://catwalk-chi.vercel.app/",
+      github: "https://github.com/Nathan4Andrade/projeto18-freela-front",
+      image: catwalk,
+    },
+    {
+      name: "Shortly (API)",
+      link: "https://github.com/Nathan4Andrade/projeto17-shortly",
+      github: "https://github.com/Nathan4Andrade/projeto17-shortly",
+      image: shortly,
+    },
+    {
+      name: "MyWallet",
       link: "https://mywallet-nathan4andrade.vercel.app/",
       github: "https://github.com/Nathan4Andrade/projeto14-mywallet-front",
       image: mywallet,
