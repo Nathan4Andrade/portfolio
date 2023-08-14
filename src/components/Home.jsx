@@ -18,7 +18,7 @@ export default function Home() {
             }}
           />
         </h1>
-        <h2>Desenvolvedor Frontend</h2>
+        <h2>Desenvolvedor Fullstack</h2>
         <>
           <Contact />
         </>
