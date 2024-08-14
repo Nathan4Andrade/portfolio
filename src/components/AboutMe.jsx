@@ -72,7 +72,7 @@ export default function AboutMe() {
           <p>
             Sou um estudante de Ciência da Computação apaixonado por aplicações
             web e computação voltada para a transformação da sociedade.
-            Atualmente estou trabalhando como desenvolvedor web.
+            Atualmente estou trabalhando como desenvolvedor Full Stack, desenvolvendo aplicativos em React e Node.js.
           </p>
         </About>
       </Container>

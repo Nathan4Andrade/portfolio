@@ -7,9 +7,15 @@ import cineflex from "../assets/cineflex-print.jpeg";
 import mywallet from "../assets/mywallet-logo.png";
 import catwalk from "../assets/catwalk.png";
 import shortly from "../assets/shortly.png";
+import falefacilponto from "../assets/falefacilponto.png";
 
 export default function Projects() {
   const projectsList = [
+    {
+      name: "Fale Fácil Ponto (Fullstack)",
+      link: "https://apps.falefacilvoip.com.br/ponto",
+      image: falefacilponto,
+    },
     {
       name: "Catwalk",
       link: "https://catwalk-chi.vercel.app/",
@@ -18,7 +24,6 @@ export default function Projects() {
     },
     {
       name: "Shortly (API)",
-      link: "https://github.com/Nathan4Andrade/projeto17-shortly",
       github: "https://github.com/Nathan4Andrade/projeto17-shortly",
       image: shortly,
     },
@@ -30,7 +35,7 @@ export default function Projects() {
     },
     {
       name: "MyWallet (API)",
-      link: "https://github.com/Nathan4Andrade/projeto14-mywallet-back",
+
       github: "https://github.com/Nathan4Andrade/projeto14-mywallet-back",
       image: mywallet,
     },

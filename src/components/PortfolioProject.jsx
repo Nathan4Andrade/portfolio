@@ -7,15 +7,15 @@ export default function PortfolioProject({ name, link, github, image }) {
       <img src={image} alt={image} />
       <h4>{name}</h4>
       <Description>
-        <button>
+        <button disabled={!link}>
           <a
             href={link}
             target={name !== "Em breve" ? "_blank" : ""}
             rel="noreferrer">
-            Live Demo
+            Link
           </a>
         </button>
-        <button className="btn">
+        <button className="btn" disabled={!github}>
           <a href={github} target="_blank" rel="noreferrer">
             Github
           </a>
@@ -28,6 +28,12 @@ export default function PortfolioProject({ name, link, github, image }) {
 const Description = styled.div`
   display: flex;
   gap: 10px;
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
   .btn {
     background: transparent;
     border: 2px solid #777cf4;
