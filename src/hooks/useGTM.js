@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const useGtm = () => {
   useEffect(() => {
-    // Dispara pageview ao carregar a SPA
+    // Pageview ao carregar a SPA
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: "pageview",
@@ -15,20 +15,20 @@ const useGtm = () => {
       const target = e.target.closest("button, a");
       if (!target) return;
 
-      window.dataLayer.push({
+      const eventData = {
         event: "click",
         elementType: target.tagName.toLowerCase(),
         elementId: target.id || null,
         elementClasses: target.className || null,
         elementText: target.innerText || null,
-      });
+      };
+
+      window.dataLayer.push(eventData);
     };
 
     document.addEventListener("click", handleClick);
 
-    return () => {
-      document.removeEventListener("click", handleClick);
-    };
+    return () => document.removeEventListener("click", handleClick);
   }, []);
 };
 
