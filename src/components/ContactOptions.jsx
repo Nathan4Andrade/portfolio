@@ -1,6 +1,8 @@
 import { styled } from "styled-components";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import { sendEvent } from "../utils/gtm";
+import useWhatsAppTracking from "../hooks/useWhatsAppTracking";
 
 export default function ContactOptions() {
   const form = useRef();
@@ -25,6 +27,7 @@ export default function ContactOptions() {
       );
     e.target.reset();
   };
+  useWhatsAppTracking();
   return (
     <ContactOptionSection id="contacts">
       <h5>Vamos conversar?</h5>
@@ -48,6 +51,7 @@ export default function ContactOptions() {
             <h6>+123456789</h6>
             <button>
               <a
+                id="whatsapp-btn"
                 href="https://api.whatsapp.com/send?phone=5583987241377"
                 target="_blank"
                 rel="noreferrer">

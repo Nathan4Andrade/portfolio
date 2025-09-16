@@ -7,7 +7,10 @@ import Reviews from "./components/Reviews";
 import ContactOptions from "./components/ContactOptions";
 import Footer from "./components/Footer";
 
+import useGtmTracking from "./hooks/useGTMTracking";
+
 function App() {
+  useGtmTracking();
   return (
     <>
       <FloatingNavbar />
