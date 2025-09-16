@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
-import { sendEvent } from "../utils/gtm";
+
 import useWhatsAppTracking from "../hooks/useWhatsAppTracking";
 
 export default function ContactOptions() {
